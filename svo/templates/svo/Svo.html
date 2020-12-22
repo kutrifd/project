@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %}
+    SVO measure
+{% endblock %}
+
+{% block content %}
+    {{ formset.management_form }}
+
+    {% for f in formset %}
+        <h5> Decision {{ f.instance.rank }}:</h5>
+        {% for field in f %}
+            {% formfield field label='' %}
+        {% endfor %}
+    {% endfor %}
+
+    {% next_button %}
+
+{% endblock %}
+
