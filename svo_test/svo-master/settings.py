@@ -69,19 +69,8 @@ DEMO_PAGE_INTRO_TEXT = """
 oTree games
 """
 
-mturk_hit_settings = {
-    'keywords': ['easy', 'bonus', 'choice', 'study'],
-    'title': 'Title for your experiment',
-    'description': 'Description for your experiment',
-    'frame_height': 500,
-    'preview_template': 'global/MTurkPreview.html',
-    'minutes_allotted_per_assignment': 60,
-    'expiration_hours': 7 * 24,  # 7 days
-    # 'grant_qualification_id': 'YOUR_QUALIFICATION_ID_HERE',# to prevent retakes
-    # to use qualification requirements, you need to uncomment the 'qualification' import
-    # at the top of this file.
-    'qualification_requirements': [],
-}
+#mturk_hit_settings = {
+   
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
 # in SESSION_CONFIGS, except those that explicitly override it.
