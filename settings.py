@@ -94,22 +94,7 @@ SESSION_CONFIGS = [
 
     },
 ]
-environ['DATABASE_URL'] = 'postgres://postgres@localhost/django_db'
 
-DATABASES = {
-    'default': dj_database_url.config(
-        # Rather than hardcoding the DB parameters here,
-        # it's recommended to set the DATABASE_URL environment variable.
-        # This will allow you to use SQLite locally, and postgres/mysql
-        # on the server
-        # Examples:
-        # export DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/NAME
-        # export DATABASE_URL=mysql://USER:PASSWORD@HOST:PORT/NAME
-
-        # fall back to SQLite if the DATABASE_URL env var is missing
-        default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-    )
-}
 # anything you put after the below line will override
 # oTree's default settings. Use with caution.
 otree.settings.augment_settings(globals())
