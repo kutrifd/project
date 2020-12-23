@@ -93,6 +93,7 @@ SESSION_CONFIGS = [
         'items_per_page': 6,
 
     },
+]
 environ['DATABASE_URL'] = 'postgres://postgres@localhost/django_db'
 
 DATABASES = {
@@ -109,8 +110,6 @@ DATABASES = {
         default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
     )
 }
-]
-
 # anything you put after the below line will override
 # oTree's default settings. Use with caution.
 otree.settings.augment_settings(globals())
